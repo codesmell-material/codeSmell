@@ -1,0 +1,1319 @@
+Repository,Repo directory,Commit_message,Commit hash
+https://github.com/AKSHAYUBHAT/DeepVideoAnalytics.git,/data/stairs/batch6DL/DeepVideoAnalytics,Retrieve now factored out completely. Possible to use embeddings even without having accessto indexer.,e4e8900ebc82b1847cd6721bb1c3fcba4ecffcd6
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Change FastSnowyLandscape to change_colorspace_(),b27050ffeeee764f11c76cd1a4a064d3ef94bb50
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Add change_colorspace_() and change_colorspaces_(),58deb45ce1af00811c32ca7dfd170c9205998e10
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Switch contrast augmenters to _augment_batch(),2dcbfd97b154f3b8cf10076e3e21fc5eacd927de
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Resolve various pylint warnings/infos,83be1c8d2459483967f70dd0958b4d4fc2684978
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Remove unnecessary code (#599)* Remove unused utils._remove_out_of_image_fraction()* Remove no longer required testutils.shift_cbaois()* Remove a duplicated and outdated parameter description* Remove deprecated args from new shift_() functions* Remove unnecessary imports from tests,480f6c1e41b478b61872d2d0cef434b5455c0f72
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Rename Sharpen parameter 'strength' to 'lightness',0a882a6706125acbe1d2aad990a7cf85cec709b6
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Reduce code duplication in CropAndPad,6411c9079a834fd7549ab4593261a3619519eb02
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Switch PerspT sampling loop to zip,f5ba97d8316e20f445eac8a47e1cdeae3d2f38ca
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Simplify RNG functions,9aa7db6d3ccd79641cfe1c9e25519e79900c7143
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Make Batch.deepcopy() more flexible and simpler,2054dbc5b91ec1e5c844f3680b60e6889b18fbd7
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Rename all .cut_out_of_image() to .clip_out_of_image(),1194add0698cd140f333049fe8ba7e5005447f62
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Rename *_line to *_lines to LS/poly drawing,9dbfef687333678601378e195f78b05b0fd3c2b6
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Mark BatchInAugmentation as privateThis patch renames `BatchInAugmentation` to `_BatchInAugmentation`.The average user is currently not expected to need it. as `Batch`and `UnnormalizedBatch` provide the same features. just a bitslower.,3fe5e7662de4cd6eb4abfd610094c766e4169912
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Improve function and argument names in imgaug.random,a39951376bb880c89239cbdfd69ca769785b83f5
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Unify imports from parameters.pyThe augmenter files so far used each two differentimport styles for parameters.py simultaneously.Some stochastic parameters were directly imported(from parameters import Soandso). while also thewhole file was imported (import parameters). Thishas now been simplified to a file import for allaugmenter files.,e719c8e58107b3ad5e43112e07bcbfc47e41b80a
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Update calls to deprecated methods,44866fb3afcb830e5e3f01acb64e69ba666afa75
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Rename KeypointsOnImage.from_coords_array(),330e56a6f1d9f28e93e5e99ce39c7b2a5159e954
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Rename .scale() for segmaps/heatmaps to .resize(),a21665205482296d26f2763139587c291aceb77c
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Switch Keypoint methods to Keypoint.deepcopy(),05f7fc0189c8b5df5d91d44d05cde867b7c87d6f
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Renamed quantize_colors_uniform(image. n_colors) to quantize_uniform(arr. nb_bins),ca9b6e60db0dce9e051058285f7b2b57d31cae0e
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Rename Augmenter.reseed() to seed_(),e4218c7584ab2c541fb7b87530c1937a479d76ba
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Replace most lambdas in tests with nested function definitions,11e5221a531e64eaa566c3a5fd03cd4395d44bf5
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Decrease code duplication in Sometimes,cd2d64594155d1cae79f7b89538f29cc565949a7
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Improve batchwise augmentation backendThis patch is a follow-up to 2d3fdb7It makes the original patch no longer breaking.improves naming of methods and adds some tests.List of changes:* Rename augment_batch() to augment_batch_().* Rename _augment_batch() to _augment_batch_().* Re-add augment_batch() and mark it as deprecated.* Add UnnormalizedBatch.fill_from_normalized_batch_() and use it in augment_batch_().* Add context testutils.TemporaryDirectory.* Add a few tests for augment_batch_().* Add tests for augmenting images loaded via functions from popular libraries.,9d5958294c4ff52ccecfa99f2e3f518a86b71125
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Cleanup test_mixed_files.py,6d27324706e7faa19c4e91255dec6c99d9c8526d
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Rename Scale to Resize,d3dfb5213e832d996a9646d33ca6148fa590d35d
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Refactor library to directly call new random module everywhere,e8e61cc0d25d63e9325c75938e82a8f6a27e9848
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Replace scipy.misc.imsave() by imageio.imwrite()misc.imsave() is deprecated. therefore it is herereplaced by imageio's recommended function.,ba42666306dd36d582fe8862086a8c7229159c9d
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Replace misc.imresize() by imgaug's resize functionsmisc.imresize() is deprecated. hence it is herereplaced by imgaug's own resize functions (i.e. byOpenCV),2f92466d7827eb401fda0debe0a87fd2fa18906b
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Improve float handling in Scale,d1a4c6e46121a4fb1a383eb6d75d5f07524f59dd
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Improve performance for deterministic Normal,3e88687eb8009812b755544836ecd08367fa28d8
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Improve performance for deterministic DiscreteUniform,81088b19d5bb52ab87a2e2429183f8a4cb453e83
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Improve performance for deterministic Laplace,c0f433aea1a58400767e5f655be1cc69fea51623
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Improve performance of deterministic Uniform,bace893b16df5ba2bf6bf264481b0c67565f8f5d
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Move Batch to augmentables/batches.py,07d54c07d546e741defb40c6e17943771ca7ee80
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Switch contrast augs to new colorspace system,ff1bfcb0499605f2cedf9b2aa53dafff2cd4a8c0
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Standardize shift interfaces of CBAsThis patch standardizes the shift interfaces of allcoordinate-based augmentables (Keypoints. BoundingBoxes.LineStrings. Polygons).All of these augmentables will then have the sameinterface for shift operations. Currently. Keypoints usesa different interface (`x` and `y` arguments) than theother augmentables (`top`. `right`. `bottom`. `left`arguments). All augmentables will use the interface of Keypointsas that is simpler and less ambiguous. Old arguments will stillbe accepted. but will produce deprecation warnings.**[breaking]** This breaks if one relied on calling `shift()`functions of `BoundingBox`. `LineString`. `Polygon`.`BoundingBoxesOnImage`. `LineStringsOnImage` or`PolygonsOnImage` without named arguments. E.g.`bb = BoundingBox(...); bb_shifted = bb.shift(1. 2. 3. 4);`will produce unexpected outputs now (equivalent to`shift(x=1. y=2. top=3. right=4. bottom=0. left=0)`).while`bb_shifted = bb.shift(top=1. right=2. bottom=3. left=4)`will still work as expected.* Add arguments `x`. `y` to `BoundingBox.shift()`. `LineString.shift()` and `Polygon.shift()`.* Add arguments `x`. `y` to `BoundingBoxesOnImage.shift()`. `LineStringsOnImage.shift()` and `PolygonsOnImage.shift()`.* Marked arguments `top`. `right`. `bottom`. `left` in `BoundingBox.shift()`. `LineString.shift()` and `Polygon.shift()` as deprecated. This also affects the corresponding `*OnImage` classes.* Add function `testutils.wrap_shift_deprecation()`.,08ade34e33d1f6f0cd941af4096556e5746369ff
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Move dtype-related functions to their own file+ Add file imgaug/dtypes.py* Move the following functions to dtypes.py: * from meta.py: * constant KIND_TO_DTYPES * restore_dtypes_() * copy_dtypes_for_restore() * get_minimal_dtype() * get_minimal_dtype_for_values() * get_minimal_dtype_by_value_range() * promote_array_dtypes_() * increase_array_resolutions_() * get_value_range_of_dtype() * clip_to_dtype_value_range_() * from imgaug.py: * gate_dtypes()* Refactor all calls to above mentioned functions to dtypes.py functions+ Add test file test_dtypes.py * Move test for copy_dtypes_for_restore() from test_meta.py to this file* While doing these things. refactor a handful of code style things here and there. All tiny. e.g. missing whitespaces.,4095b5cb3b448857a47ea2fea669bca8937404ab
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Switch tests from RandomState to RNG,139300c1b4fcffe381a553192b2154b336eae0c4
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Switch Sequential to new _augment_batch() interface,e112a5f53d90978a5601fc8f410971de3f8e7183
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Improve performance of ElasticTransformation* Switch blurring to blur_gaussian_()+ Add remapping via cv2+ Extend dtype tests to order!=0* Overall about 5-10x speed improvement,a639c56f640a9fc5bc487b5d4d9544cc876fa62a
+https://github.com/AlexEMG/DeepLabCut.git,/data/stairs/batch2DL/DeepLabCut,Moved some tf code to tf.compat.v1,8f21597f5113a909dcc9a3e886846609425de783
+https://github.com/allenai/allennlp.git,/data/stairs/batch5DL/allennlp,"Replace existing WordSplitter with Tokenizers (#3361)* WIP: Remove splitter* Convert WordSplitters to TokenizersRemove WordSplitter and move the existing splitters to tokenizer.* Move Tokenizers to separate files.Move legacy handling into Tokenizer.from_params.* Add legacy tokenizer loading test.And move tokenizer tests to individual files.* Rename white_space_tokenizer to whitespace_tokenizerAnd add it to registry under ""whitespace"".",2850579831f392467276f1ab6d5cda3fdb45c3ba
+https://github.com/allenai/allennlp.git,/data/stairs/batch5DL/allennlp,Change torch.BoolTensor(...) to torch.tensor(...) (#3892),b9989913ee510401f0510b7fb2aacd829cc881e2
+https://github.com/asyml/texar.git,/data/stairs/batch4DL/texar,Toggle off tf warnings & Add custom & Polish code style,653cefb9911b93b607b6fdd327592dde519f3834
+https://github.com/asyml/texar.git,/data/stairs/batch4DL/texar,move mode-related utilities to separate mode.pyFormer-commit-id: e1a0bb42a0426053b049c16beb97c5718cb2d26f,02328194bf4994119468829974ed5fa1de034693
+https://github.com/asyml/texar.git,/data/stairs/batch4DL/texar,reorganization of transformerFormer-commit-id: 0c5da210c6cc1d399429395bed3bf74a1efce55e,c1ee3eb4b555366f153879cbeafca3ca80a76fc0
+https://github.com/asyml/texar.git,/data/stairs/batch4DL/texar,remove chainer dependencyFormer-commit-id: ea64dfa8573d02a7931522fd6fa43fe9c8c97bb9,90e8720d21b7e4641924a4135b30e21586de49ef
+https://github.com/asyml/texar.git,/data/stairs/batch4DL/texar,Transform style,330a1ef3fbe3b83ef581e3a66c1808140a63a02b
+https://github.com/catalyst-team/catalyst.git,/data/stairs/batch4DL/catalyst,wip: layers refactoring. more structured,956f94198f7eecbf9bc33704b9e7c0d39528bc52
+https://github.com/catalyst-team/catalyst.git,/data/stairs/batch4DL/catalyst,Registry refactoring- Separate registry object for every type- Import-cycle aware- Common contrib registry. separate dl and rl parts- Everything refactored and tested,15263c9595a476afc6e6739b13896ec73ecaaee6
+https://github.com/catalyst-team/catalyst.git,/data/stairs/batch4DL/catalyst,Huge state/metrics refactoring. Loggers updated. (#116),d57aa7aa200412cb6a58a8697cc6251cbebba0c1
+https://github.com/catalyst-team/catalyst.git,/data/stairs/batch4DL/catalyst,distributional ppo poc + critic refactoring (#253)* distributional ppo poc + critic refactoring,86df3d0466bb72a566fca457b108ef35a4ff6b14
+https://github.com/catalyst-team/catalyst.git,/data/stairs/batch4DL/catalyst,catalyst-lite: single model/criterion/optimizer/scheduler and refactored callbacks,60dfcf812eca79017dced46e1189245c050a3fd6
+https://github.com/catalyst-team/catalyst.git,/data/stairs/batch4DL/catalyst,parse refactoring: need better solution,e55719e74717754c79d190e1aeeb6335bee24402
+https://github.com/chainer/chainercv.git,/data/stairs/batch6DL/chainercv,rename,65ec524570eef76f20bf0539b01d3483d76ef4eb
+https://github.com/chainer/chainercv.git,/data/stairs/batch6DL/chainercv,np.asarray -> np.array,98deefc600ce88ae6a516a25a90b8a66c01b16ed
+https://github.com/chainer/chainercv.git,/data/stairs/batch6DL/chainercv,use numbers instead of np.issubdtype,b8475465912945237f27b088d2d0a2e85026b0a1
+https://github.com/chainer/chainercv.git,/data/stairs/batch6DL/chainercv,style,93c410f65687a0eabe8ac5eb480324a893db6be5
+https://github.com/chainer/chainercv.git,/data/stairs/batch6DL/chainercv,Replace read_image to read_label,9decee5ab0aaa0614ea4e9557a6cd24333dbe7fe
+https://github.com/chainer/chainercv.git,/data/stairs/batch6DL/chainercv,replace fullmatch with match,b1f52e273400034ab02dece5628e8aad0ed5d439
+https://github.com/chainer/chainercv.git,/data/stairs/batch6DL/chainercv,replace SelectiveWeightdecay with WeightDecay and GradScaling,46b125f352d93601276d6282679370ca52bb14fc
+https://github.com/chainer/chainercv.git,/data/stairs/batch6DL/chainercv,refine transforms_tests/bbox_tests,5cd677e5ade7710a85d172d1f745b6d1fa4a1e4d
+https://github.com/chainer/chainercv.git,/data/stairs/batch6DL/chainercv,simplify vgg16,b7030848d78b44812acec10a05ce039c643519ff
+https://github.com/ClimbsRocks/auto_ml.git,/data/stairs/batch4DL/auto_ml,refactors our build_fn for regressors to be more flexible,b72a691b686ea0327939c3f756a329084c7acca8
+https://github.com/ClimbsRocks/auto_ml.git,/data/stairs/batch4DL/auto_ml,refactors how we get and loop through our subpredictors. as well as the X_test and y_test data we pass in to them,3dd1506f85618cf5ba6e82b18fc5760d374b80d6
+https://github.com/ClimbsRocks/auto_ml.git,/data/stairs/batch4DL/auto_ml,code clean up. and x_test enabled for lgbm,cc60e59a06b88bd95d4bb795b533dbbc8ecd0f5b
+https://github.com/d2l-ai/d2l-zh.git,/data/stairs/batch5DL/d2l-zh,revise the rest opt chapter,ef784a5b9046b1861de9d7ebba06e2d51a87c0cd
+https://github.com/d2l-ai/d2l-zh.git,/data/stairs/batch5DL/d2l-zh,refactor rnn,088c489612ff333a5213a483e6c0c551d1665211
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Renamed DataFeaturizer to DataLoader,4018ef4ca59c632b838643ac2505c1b85279b405
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Continuing refactor of TensorflowModel,cd648e6252104018c89693dd4ca3a14d93ab6669
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Made initializations consistent with tf.keras naming; test_file_rename,9d016fef2c51ad44ca072d3a091791f63f3efba1
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Began converting to TensorFlow 2,7cf104f99a590bde9918eaa8cf71786699abeb67
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,More refactor,c6877dcce4fbb0a9511bdf74023bb8a1363bae4c
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Yet more refactoring,aa6e3b120d213e2b0e431739470f73698a7b93a6
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,First step of Model refactor,d8c0d1942326aa95e30ff2b458076496ed847f2e
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Continuing to refactor graph models,490b5acedeb65d17c9d6fd965f28e8146e673656
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Renamed MultiTask to Multitask,b7980a0bff6bf322fb05c24515284634e478d85e
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Simplified names of TensorGraphMultiTask models,2c22772eb4f6d8f84095c144b0ffa2a4c4f489f3
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,WeaveTensorModel to WeaveModel,7994e12517ef22bc3b81f947191666ae04660827
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,recover breaking changes,13d859ec288a723ea2b7f14f4402a20dc5ea89a9
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Refactoring dataloader API,5f3689e351e95dd741f529b02b99c7179a464eb5
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Rename MPNNTensorGraph to MPNNModel,ada0d8072190d6fef5676c472752cdd3bd8f997a
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Rename TextCNNTensorGraph to TextCNNModel,4cac0b6d9da1126ff8bfa3da1ac630d5a35c4e23
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Continuing refactoring of Dataset,f4c493d845d836bdd53cc37887d6deb48343b748
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,refractor DTNN,c08d9e1dfa7062682697311a2bad6795f87b6c40
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Finished refactoring graph models,41dea7dbd76600cc4288db7e20e16dbdc2647582
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Created API for TensorGraph optimizers,998c532248615e7ee5fcc974e0b77036764b6a3d
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Continuing Dataset refactoring,7c007cf5ae430b0f167fc3faed5853d6ea3aaca5
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Beginning of Dataset refactoring,098095d4ce426edb89e61eba2923b89dfc191bdf
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,dnasim cleanup,a2ecb3979f4564a8df60edf5184a4ef2e653e521
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Replaced uses of deprecated layers,84398f9fb6e6a8d2bb913367fdd389f9ca3a5405
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Refactoring continues!,f5cfcea4e49aeb418b5b066dadd960c2015e04de
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,deepchem->dc many tests,0d0bf039265afd094eebfd4cd5bb1bc8438a5ec1
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,save and load function,1009c2b286b0adb6ae104ab020d8453aa1d1684f
+https://github.com/deepmind/sonnet.git,/data/stairs/batch3DL/sonnet,Migrated from tf.nest to treePiperOrigin-RevId: 285753613Change-Id: I444db9927b81e04fb46a55edf44705fd2d511aad,6c6c533b1459ede205d79cf580dc934ab3fdb690
+https://github.com/deepmind/sonnet.git,/data/stairs/batch3DL/sonnet,Move common optimizer tests into a base class.PiperOrigin-RevId: 258384006Change-Id: I15fe639054586b86b0e2eaa284f63a2a4fe3ccec,a05610e8070bd71f20336d7cd112bf2a7011776e
+https://github.com/deepmind/sonnet.git,/data/stairs/batch3DL/sonnet,Apply bias only once in ConvLSTM.https://github.com/deepmind/sonnet/issues/65PiperOrigin-RevId: 202473272,e15eb742e50044b70e1e4bc008b7598d158786d7
+https://github.com/deepmind/sonnet.git,/data/stairs/batch3DL/sonnet,Rename `_create_parameters` to `_initialize`.We plan to use the same name consistently in Sonnet. but in some places (e.g.optimizers) create_parameters would not make sense (here we are creating thingslike moments associated with parameters).PiperOrigin-RevId: 250705607Change-Id: I797d08176f36fd2dfa89b4198fffd701642d00c5,2239a0b31295f89fc23f70a25312caf61d1f8489
+https://github.com/deepmind/sonnet.git,/data/stairs/batch3DL/sonnet,Move common optimizer utility functions into optimizer_utils.py.PiperOrigin-RevId: 247589803,ec547f599b3e84dab2113d48a3b8e0c2bf843a24
+https://github.com/deepmind/sonnet.git,/data/stairs/batch3DL/sonnet,Apply name change(experimental_run_v2 -> run) for all callers.PiperOrigin-RevId: 301919882Change-Id: I14c6ed85bdf50d619d1bc572e0fbcc5f1821c70b,bb53c63753a8dd23a95b725e8e47a807523ae221
+https://github.com/deepmind/sonnet.git,/data/stairs/batch3DL/sonnet,Rename the 'axes' argument in the snt.LayerNorm constructor to 'axis' to be consistent with sonnet's BatchNorm constructor.Also modified the checks (and docs) such that axis can alternatively be a scalar int instead of requiring a list for convenience.PiperOrigin-RevId: 222064990,8a6d51c7027d10c0becb37145917bfcacec8d63d
+https://github.com/deepmind/sonnet.git,/data/stairs/batch3DL/sonnet,Copy signature of _build to __call__.PiperOrigin-RevId: 221109661,eace9e7dc3edddc61f30d42a67c40991d7dcd58d
+https://github.com/deepmind/sonnet.git,/data/stairs/batch3DL/sonnet,Unify sparse and dense update rules into pure functional versions.PiperOrigin-RevId: 275093209Change-Id: I1b2852bb8b9c77cc8c70bc2be1e1dd6d63a7fd16,484ffb3eae65a09c717a6c823dcc888d5750df6c
+https://github.com/deepmipt/DeepPavlov.git,/data/stairs/batch5DL/DeepPavlov,logs: replace prints to stdout with logging (#369)* logs: move keras model summary to log.info* logs: remove prints in favor of logging,04d0299433918f14a9233d7f87be68b859f5f4ea
+https://github.com/deepmipt/DeepPavlov.git,/data/stairs/batch5DL/DeepPavlov,refactor: load_path and save_path for go_hcn_rnn,6b33ca24d5df63dcae69f4e6140327f5fecbc897
+https://github.com/deepmipt/DeepPavlov.git,/data/stairs/batch5DL/DeepPavlov,chore: change save method to super,a29d4b3d9abed59b206860d02ef850a148f1f5f9
+https://github.com/deepmipt/DeepPavlov.git,/data/stairs/batch5DL/DeepPavlov,chore: change save method to super,b3a4857a297b9a405921d8c4d89dd4c0fdd4b96b
+https://github.com/deepmipt/DeepPavlov.git,/data/stairs/batch5DL/DeepPavlov,chore: refactor keras model and keras intent model,7e045afdfbe36a3c1c14eda83e2cdf2bedc6d588
+https://github.com/deeppomf/DeepCreamPy.git,/data/stairs/batch2DL/DeepCreamPy,remove xrange for python 3 compat,8f7e46f5f005cb1b0cb547031ec20fecf1341b6e
+https://github.com/dmlc/gluon-nlp.git,/data/stairs/batch3DL/gluon-nlp,Transform refactor (#282)* Organize corpora by name instead of initial usageText corpora can be used for different tasks. The current API mandates the usefor a particular task by coupling the raw dataset representation with the thetransforms. This re-organizes the code declaring the different datasets as apreparation for refactoring the API.* Remove LM Dataset/Stream in favor of equivalent batchifyBefore this change. the ability to transform a dataset to BPTT batches requireda dataset or stream to subclass a LanguageModelDataset / LanguageModelStream.imposing restrictions on the use of the Dataset (such as enforcing flattening).* Introduce EmbeddingCenterContextBatchify API alike changed BPTT API* Update embedding training script* Update WikiText defaults to match LanguageModelDataset defaults* Update language model scripts* Add stream_identity_wrappers fixture to testsAll DataStreams included in Gluon-NLP should support being wrapped by one of thewrappers returned by this test fixture. When writing a test to test some Stream.make sure to parameterize it by stream_identity_wrappers so that the stream istested with all possible stream wrappers.* Make CorpusBatchify return a gluon.data.Dataset instead of ndarray* Update language_model.ipynb* Update sentiment_analysis.ipynb* Update embedding.evaluation* Update word_embedding_training.ipynb* Add test_gbw.py* Improve doc* Add missing class to doc,a947d66d28baaae1302363556a8a18b04fa6aa40
+https://github.com/evilsocket/pwnagotchi.git,/data/stairs/batch4DL/pwnagotchi,refactored main.py,56b1d21bb04d62a165b55a21371cc7217e89c3d0
+https://github.com/evilsocket/pwnagotchi.git,/data/stairs/batch4DL/pwnagotchi,make less verbose,1013e7dc190969e21b8febebb8caa579673920a2
+https://github.com/evilsocket/pwnagotchi.git,/data/stairs/batch4DL/pwnagotchi,small refactoring to facilitate integration of the bond equation,3ad426916f203c5b96afa08a1ba627cad38d2d33
+https://github.com/google/deepvariant.git,/data/stairs/batch4DL/deepvariant,Leverage the six module for Python 3 compatibilityPiperOrigin-RevId: 192794276,6abaea8a16b20f507f1dc5907597f4b98b7dfa73
+https://github.com/google/deepvariant.git,/data/stairs/batch4DL/deepvariant,Nucleus is now python 3 compatible.This CL updates Nucleus so that nucleus sources are compatible with python 2.7 and python 3. Adds internal testing for dual py2 and py3 builds. Mostly this was done with simple six substitutions where py2-specific constructs were being used. In some cases it was possible to simplify TF dependences instead of (io/python/wrappers*_test.py in particular).PiperOrigin-RevId: 195005903,744e847e9a8c25fbc5d020dcec8697522ca3ad86
+https://github.com/google/deepvariant.git,/data/stairs/batch4DL/deepvariant,Cleanup Phase II of haplotype_labeler: update documentation and address some of the outstanding TODOs. None of these changes are functional.PiperOrigin-RevId: 192158699,2f2f12f706b8cf8f76e15a68f3d95bfb7dfc3310
+https://github.com/google/deepvariant.git,/data/stairs/batch4DL/deepvariant,This CL renames fasta_reader.h/cc to in_memory_fasta_reader.h/cc to betterreflect the fact that the implementation keeps the fasta file in memory.PiperOrigin-RevId: 210727010,b3ebb1f0645a8af8c48c05397161c4760cd16eaa
+https://github.com/google/deepvariant.git,/data/stairs/batch4DL/deepvariant,Convert sharded_file_utils function names frmo CamelCase to snake_casefor consistency with the rest of Nucleus.PiperOrigin-RevId: 228227520,8cc130ba8a515faa7e938f202f1f2ede0689032c
+https://github.com/google/deepvariant.git,/data/stairs/batch4DL/deepvariant,Use variant_utils functions moved out of haplotype_labeler.PiperOrigin-RevId: 188118310,24207b8a793ec2f2cc6a0c225cded4b48657dee6
+https://github.com/google/deepvariant.git,/data/stairs/batch4DL/deepvariant,This renames RefFastaReader to IndexedFastaReader.PiperOrigin-RevId: 210713478,bd89bdfbaf3e163cc35b8aa01855e6cb3830bd58
+https://github.com/google/deepvariant.git,/data/stairs/batch4DL/deepvariant,Internal refactorPiperOrigin-RevId: 228912759,c55f7e7009f22c3d23f91b2f5c70c4893216b748
+https://github.com/google/deepvariant.git,/data/stairs/batch4DL/deepvariant,Replace make_sam_reader with SamReader.PiperOrigin-RevId: 187647108,e3cd590bcb5dc88d92feb413c7faed954fb95ca3
+https://github.com/google/deepvariant.git,/data/stairs/batch4DL/deepvariant,Replace mock.HASALLOF with a local _HasAllOf class.PiperOrigin-RevId: 183444069,558cbf28024967f184c9337014c56dac6c765de2
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,Changes for 0.7.1 compatability.,b80d578dfc1ec69bd859406aa633f7c97d361933
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,Prepare GP2.0 for TF2.0,8259acbe363ecc589103678cc7402c2cf54ea564
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,Intermediate state of shuffling modules,cbc5d2b306669b3250bb6ec2c1091f02d93a3875
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,tensorflow 1.0 (#360)* Switch to tensorflow 1.0.0* tf.concat_v2 is now called tf.concat* Update tensorflow in docs and travis,825d141abd66550a32e0632bc63740ffcb92245e
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,GPLVM models to GPflow2.0,a49c1a33600437a2b1b0cbba79597bee2177bda3
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,Rename RBF to SquaredExponential. (#1033),6a02bf5cc0c92b98902c62a891c8b7112aa6b9a0
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,Clean up repository.,1c82a23824361f481aa11404a64081fdf8810e17
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,Rename transpose => to adjoint,8e3e4e8aac602c22724ec7ef28bdc9a4f9f031f7
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,changing all instances of diag(_part) to matrix_diag(_part),e8436cae648817e8f3ae054b7129ea01a968b50b
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,Rename feat and kern to proper names!,bf743e459423cd25fbc5da80f6ad5b4aaeb2e054
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,Pulling complicated function out into component parts.,e228dd7ae0e69d9f7b93a40f80dffbcdcfd7180e
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,rewrite vgp with explict parameterisation of q_sqrt,55188f2944dbdeb69b1bc6571315062630f2d436
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,refactor training objective methods (#1276)This gives all `BayesianModel` subclasses a consistent interface both for optimization (MLE/MAP) and MCMC. Models are required to implement `maximum_log_likelihood_objective`. which is to be maximized for model training.Optimization: The `_training_loss` method is defined as `- (maximum_log_likelihood_objective + log_prior_density)`. This is exposed by the InternalDataTrainingLossMixin and ExternalDataTrainingLossMixin classes.For models that keep hold of the data internally. `training_loss` can directly be passed as a closure to an optimizer's `minimize`. for example:```pythonmodel = gpflow.models.GPR(data. ...)gpflow.optimizers.Scipy().minimize(model.training_loss. model.trainable_variables)```If the model objective requires data to be passed in. a closure can be constructed on the fly using `model.training_loss_closure(data)`. which returns a no-argument closure:```pythonmodel = gpflow.models.SVGP(...)gpflow.optimizers.Scipy().minimize( model.training_loss_closure(data). model.trainable_variables. ...)```The training_loss_closure() method provided by both InternalDataTrainingLossMixin and ExternalDataTrainingLossMixin takes a boolean `compile` argument (default: True) that wraps the returned closure in tf.function(). Note that the return value should be cached in a variable if the minimize() step is run several times to avoid re-compilation in each step!MCMC: The `log_posterior_density` method can be directly passed to the `SamplingHelper`. By default. `log_posterior_density` is implemented as `maximum_log_likelihood_objective + log_prior_density`. Models can override this if needed. Example:```pythonmodel = gpflow.models.GPMC(...)hmc_helper = gpflow.optimizers.SamplingHelper( model.log_posterior_density. model.trainable_parameters)hmc = tfp.mcmc.HamiltonianMonteCarlo( target_log_prob_fn=hmc_helper.target_log_prob_fn. ...)```In this case. the function that runs the MCMC chain should be wrapped in tf.function() (see MCMC notebook).,7e717ccb69bf4a3e563f176b28ff2f516d65482c
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,Compatibility with next version of TensorFlow (#316)* Compatibility with next version of TensorFlow.- Remove references to batch_matmul.- Various functions that need to be renamed.,0e4b3c4b992cc1142c322a6b9d6d6eb4d2310779
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,Get tests working with Python 3. (#152)- Added relative imports (.reference)- Changed all failIf/Unless to the non-deprecated assertTrue/False.,3f6f06363111ca414520daddf68f22366fe6d963
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,log_prior -> log_prior_density (#1329),e680397d43734d864d143c4263e63de8c8573984
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,solve -> triangular_solve,82779a785e66d6949cd2a66a68e57757ba2f6bf1
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,More clarity in method names:to_dict has become get_parameter_dictfrom_dict has become set_parameter_dict,4a621757d39f55fba4522201598275030644ef54
+https://github.com/GPflow/GPflow.git,/data/stairs/batch5DL/GPflow,Pylint changes. DataHolder inherits main implementations from Param.,0629779f9580ef25359b03dd6c9e0ba578436864
+https://github.com/Hironsan/anago.git,/data/stairs/batch2DL/anago,refactor trainer uging ModelConfig and TrainingConfig,6727dca0985fbc6874c985e94471081f5e9c9bec
+https://github.com/keras-team/autokeras.git,/data/stairs/batch3DL/autokeras,Memory (#161)* aa* limit memory* refactor to_real_layer to member functions,68e0442cd7c9e28e2d1a0ca41dac64297fad858a
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Redirect Keras to tf.keras (#14121)* Replace all code with tf.keras redirects,b5cb82c689eac0e50522be9d2f55093dadfba24c
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Refactoring of sklearn,be24159959672c32abb31697e721d96ae6ffaf97
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Replace `parametrize` with `skipif` (#9511),d79200a51710a23cc47b4ca5ad3f8df7c32f4eae
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Use local RandomState instead of seeding the global RNG (#12259)* Use local RandomState instead of seeding the global RNG* Create a unit test module for datasets and move tests there* Move initializer test to the proper file,91ccb284abcd83a091dc5f2549f6b24df849a2b5
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,make constraints and regularization more abstracted,af46ab0d4dc981b899fe6c82c1712e95f251a118
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Use tf.select instead of tf.where (compat TF 0.11),30fa61d4576d103872a28ea8ae2281100a470388
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,layer_from_config -> layers.deserialize,ebe84eb3a1c3beb44e25fa4f00a89f2c71dde2cc
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Switch to symbolic shapes for TF in K.shape(),cfcb1e87038e33d22fa4d8f38ec96c949767ebb7
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,sum -> add,fbe7873fc0f43090e2df52b85867b8b6179516ca
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Further style fixes.,ac4b365e0b08bd2a655bb86573995344ef750071
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Style fixes.,1422baaa8d94fd2aa42e784c9fd474ec3d3298c9
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,clean up,35c5fa911dcc304f39f0bc6c335d4f67ce082b79
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,"Convert ""dim_ordering"" to ""data_format"".",5adce5266f43f89dcf7f14758e5d895fbf6791ef
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Used paths rather than hardcoded strings in autogen.py (#12147)* Used paths rather than literals for autogen.py* Used resolved.* Some changed but doesn't work yet.,6368af9a5685266a094415eeb7c73e6d23f7d950
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Minor optimisations (#12627)* Avoid importing copy* Minor optimisation* Cleanup* PEP8* Revert changes,b2771d13b0f9146cde43af00f5a5156f56614436
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Various style fixes.,0fd0218ef0b513131970b2fe6b6e33f5b90f32a6
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Refactor workarounds in application tests (#9032)* Refactor workarounds in application tests* Remove `set_image_data_format`,3a431ea52d090fb3ef8a1e0e5d7f796d9a42e097
+https://github.com/maciejkula/spotlight.git,/data/stairs/batch2DL/spotlight,Update for PyTorch v0.2.0.Main changes are to deal with new keepdims/broadcasting behaviour.,626da74d11a696d87c54cf935b847335c442b18f
+https://github.com/maxpumperla/elephas.git,/data/stairs/batch2DL/elephas,python3 support,3c63a53256dac8925aef0c741bd084632e548ca2
+https://github.com/microsoft/nni.git,/data/stairs/batch4DL/nni,Refactor dispatcher cmdline (#1862),9d01d083a75e2b53e34e5b1136828a30df56a408
+https://github.com/microsoft/nni.git,/data/stairs/batch4DL/nni,Pruners refactor (#1820),ac6f420f224c331af8bda16edd9700e4cadea7e0
+https://github.com/minimaxir/textgenrnn.git,/data/stairs/batch1DL/textgenrnn,Refactor + implement fit_generator (#15),b491a69a093a72f40f5af06d99eb3df28ff276be
+https://github.com/NervanaSystems/coach.git,/data/stairs/batch3DL/coach,more clear names for methods of Space (#181)* rename Space.val_matches_space_definition -> contains; Space.is_point_in_space_shape -> valid_index* rename valid_index -> is_valid_index,cd812b0d25833e42526b22230afb7f41f9ed98ee
+https://github.com/NervanaSystems/coach.git,/data/stairs/batch3DL/coach,N-step returns for rainbow (#67)* n_step returns for rainbow* Rename CartPole_PPO -> CartPole_ClippedPPO,49dea39d34a562a46daa562051a66846326f66f4
+https://github.com/NervanaSystems/nlp-architect.git,/data/stairs/batch3DL/nlp-architect,Refactor CONLL2000 and Chunker to TF Keras,45f261ea317e391d72a05d6c8afaf8cdf22f48a4
+https://github.com/NervanaSystems/nlp-architect.git,/data/stairs/batch3DL/nlp-architect,Moved NP_Semantic_segmentation from Neon to Keras,bf6adcde668eefc374338ad639765f0de44e38e6
+https://github.com/NervanaSystems/nlp-architect.git,/data/stairs/batch3DL/nlp-architect,wsd review (#172)* WSD refactor and review for v0.1,f4aed23b5764be7fa5b42bcf598b87cb6a97f705
+https://github.com/NervanaSystems/nlp-architect.git,/data/stairs/batch3DL/nlp-architect,Chunker model refactor (#141)Updated Chunker model to current package structure,9d723c9610c40a44a893233c265a14199a161b1a
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,refactored resampling,7c4f035497540e3217042201d08693a5ecc12b55
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,replace get_shape() with the alias Tensor.shape,ef2531b55dc4c6cafc1e7f121b4dfac2aa038d0b
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,refactored get_file_list function for gan app,38d3ab74241ee1e7a8e7759f320fd2fa898cf73a
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,refactored get_file_list function for regression app,1cd68140dfa32dc78497ef35fd494dd32b7f739c
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,Making the interface with loader clearer in `image_type.py`,15026ad5df151062a80d2039df3bb32c0238c91d
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,refactored random affine augmentation layer- Changes affine grid warping interface from [0...dim_length]to [-1...1] so that it is invariant to size of the inputs.- handles 2-D and 3-D consistently,611b8d6dbc7f47f4f174680e8288466b06c9873b
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,renaming initialise_reader() => initialise(),8208868645c72fe7d5ebf1d6bc68594683b2818d
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,dataset api compatible,39773fd778e162bf61635c79d0e3d708140f8665
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,Refactored the VAE model. breaking it up into an encoder. sampler and decoder. Hard-coded all VAE architecture.,4c3f86dec055e9f7d556374a9681dbb6eaf1c8c1
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,tidy up,8f24468580543bbd796e02af4eaa9b8f97013c97
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,refactored get_file_list function for contrib app,c25036261ee9d9e9c79099b4e7938d591cbda7b5
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,refactored get_file_list function for registration app,a171192e1b2062a0ec8a2c2f8a22b71fb290f98a
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,refactored get_file_list function for autoencoder app,e3700cd9c3d556c96bd4eff893669baa679a3083
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,starting volume reader refactoring,06ac55c2da7b0313e7edbba742ec44e03734565e
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,refactored balanced sampler,757024bccb9468a6afd8c365b249699fbe518acd
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,Cleaned up spatial transformer code,3061a5529838fc1a372b020151cce402796731ed
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,Cleaned up spatial transformer code,95116239b18a6903f6a06827a5366063b877aaf0
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,refactored segmentation loss by introducing one-hot function,377989c11903f69f042fee717ce6be66bd6eb43a
+https://github.com/NTMC-Community/MatchZoo.git,/data/stairs/batch4DL/MatchZoo,replace most K.* with tf.*,e1b38e326acb2c536717c9592de5550e6eaa714c
+https://github.com/NTMC-Community/MatchZoo.git,/data/stairs/batch4DL/MatchZoo,support keras 2.3 and tensorflow 2.0,2096d88830e99719885c5754267f0c94e1362ded
+https://github.com/NTMC-Community/MatchZoo.git,/data/stairs/batch4DL/MatchZoo,Replace function-based hyper spaces with class-based ones.,a70bf3348b77eb4d791f6e0a6d2d5cc191807319
+https://github.com/NTMC-Community/MatchZoo.git,/data/stairs/batch4DL/MatchZoo,replace read table with read csv for pandas,c71713f7755e7fa1a6793c03259fa6c92c00d74c
+https://github.com/NTMC-Community/MatchZoo.git,/data/stairs/batch4DL/MatchZoo,refactor datapack. adjust base_preprocessor,4da2f46aa36c5154e07b1dc1c225cd93415c2a57
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Replaced TorchTensor initialization with torch tensor and refactored shared variables into setUp method,8305db60ab8ec756d939b3f492f3065783bf5c24
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Split notebook tests into separate tests per notebook (#2919)* Split basic notebook test into separate tests per notebook* Rename `base_notebooks` to `basic_notebooks`* Parametrize advanced tutorial notebooks* Clean up tracking of tested and untested notebooks* Exclude failing advanced tutorial notebooks,c4cba6a47500db5d0d19393b8aa3ad2df6a55d99
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Clean tensor.deser and rename binding/wrapping functions,6616be9fff7ec252e8c0e4fe24604ee53e04c8f6
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,[spdz] Enh: Pass shape and worker as parameters in spdz mul and triples,48861f428813bfac511baecc4775901bbc366591
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Move back detail/simplify to _detail/_simplify,b9c465579ff8c58b122732a54d0b45986fa3ba19
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Renamed func in hook_args for clarity (#2408)* 1903 : renamed functions to remove ambiguity* 1903 : renamed functions to remove ambiguity[reformatted]* 1903 : renamed functions after suggestions,1f05bd9babd552f4fc40545c71303dc624c0c132
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Make fit independent of jit,d73ab426472e4368df3927bae8173d49eade44b5
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Move _simplify_plan and _detail_plan to Plan class,89d2600999fd7fd96c5283368ea7d8228a4e1aaa
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,JSON -> msgpack ; work of fixP backprop; code optimisation x70 overhead,fb60c1ad733f1de4ef587a90b2adb7c1dce64c8f
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Reformat files with black,1189107b83a28569e9b76a0c32584c2e203a38c6
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Rename LogTensor -> LoggingTensor,1899f20f09384da4f63aba119f241701da5f909e
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Clean code in tensor.py for PEP8,7e4c48eb73f8573e4955d58576ae183d97417fe0
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Extract a `msgpack` module from `serde` (#2843)* Extract a `msgpack` module from `serde`This sets up a situation where additional serialization methods(like Protobuf) can each have their own module within `serde`.* Clean up `serde/__init__.py` imports,475fd8d46a24d8f8ad81c7edaf0af29cb45b3426
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Replaces the old Float class with the configurable FixedPoint class. Modifies operation to work with the FixedPoint class,879d05dc56a1a7ae41611728678290562b92bb60
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,Clean up test_autograd,f15c9827f81aad794604ceea4acd7d35326d0980
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,cleanup and demo,dae4a309df998c852c333c493fa4c4a3e111d2ad
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,Huge refactoring to get closer to OpenNMT-tf modularity,6128d9a92a8955848f479956e0a0a225bf493d09
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,This PR is the first step of a code refactoring,e0c10af90f9581087294978e6f92bf5d22a06f85
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,Replace the old Encoder classSince we now have refactored out several *Encoder classes.replace the Encoder class with the make_encoder() dispatcher function.,fc9913e3bce7afc3b4399fe71cf4c9415d009a84
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,Rewrite add_argument to be compatible,18737a63ea3d3d2ff4c47d4fb17430c62cff7d00
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,preprocess/IO: factor out separate dataset for different data_type,e2977f7f6108093ed24aa14db5b38e427a69b413
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,Refactor language modeling example,d5a75ba09ae0595ca284fd806475eb8d3f771387
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,Replace opt.gpus with opt.gpuid,0618f999aed2eded48bd59e2a7aa0ccba6239ac4
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,IO.py: rearrange exported functions and update docs,0cd92b6498fbcd5f8eba59b879c064d3ccdfc5d4
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,Trainer: Move Statistics to Trainer.py,7674a4a179c6e25fa85f6a9aed2e73355be4e2e0
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,preprocess: factor out common code,ef34ef7d791f5f1b3b1844a705c488771f8af7d7
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,.,3795eabbdc08e59fe43622a0e1bffe3916332f0f
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,.,2c3dd6f3bd666bf7aeee2786dd00bc577b08bc0e
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,.,c88688032b3173bb140677e0e4e7b481efd3a5b9
+https://github.com/OpenNMT/OpenNMT-py.git,/data/stairs/batch5DL/OpenNMT-py,change `t()` to `transpose(0. 1)` for latest pytorch supportlatest PyTorch (commit 32e6665) `Variable().t()` function does not support 3-D tensor transposition. using `.transpose()` instead.,b20ecac794b9fc6d86ed05f668e5b7840ed2f1dd
+https://github.com/PetrochukM/PyTorch-NLP.git,/data/stairs/batch2DL/PyTorch-NLP,Upgrade to PyTorch 0.4,b20ecac794b9fc6d86ed05f668e5b7840ed2f1dd
+https://github.com/PetrochukM/PyTorch-NLP.git,/data/stairs/batch2DL/PyTorch-NLP,"Replaced .view with .reshape on AttentionReplaced .view with .reshape in Attention module in order to avoid RuntimeError: ""view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead."".",ec82cf132747afe2c72baa02e9f8484e1b25b16b
+https://github.com/raghakot/keras-vis.git,/data/stairs/batch1DL/keras-vis,Enhance doc generation handle:- Multiple function aliases- Including submodules imported within __init__.py,9f221345e7a58804e347f2a1879b06922222413b
+https://github.com/raghakot/keras-vis.git,/data/stairs/batch1DL/keras-vis,moved utils to its own package,fed2eea3b464773d3d6f9edbc2fc6dec9798ed5b
+https://github.com/raghakot/keras-vis.git,/data/stairs/batch1DL/keras-vis,update to use keras-2.0 version,20c1c7500160b7b6eda561a7b11b321745cc0e89
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,Migrate Python C extension to Cython (#3541),48139cf8615b0f8499235489768e6b7758f4189e
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[RLlib] rllib/examples folder restructuring (#8250)Cleans up of the rllib/examples folder by moving all example Envs into rllibexamples/env (so they can be used by other scripts and tests as well).,42991d723fad1d1b698e895969908105ca22f72c
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[tune] Cross-Framework Compatibility (#2646)This commit is a first pass at restructuring the Trial execution logic to support running on multiple frameworks.,38867eea4e011115515b77018c2310e7dd74ff55
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,Refactor pytest fixtures for ray core (#4390),8ce7565530863399472cd8694b1bde00837957c1
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[DataFrame] Update architecture to be more flexible and performant (#1821),0d9a7a3c1910fd4cd3b085b39e6187654f51feca
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,Move TensorFlowVariables to ray.experimental.tf_utils. (#4145),7b04ed059e774151d30e68a11dff08abc31859b3
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[rllib] ModelV2 support for pytorch (#5249),bf9199ad77b7ea900aefd2624374c78a6e6c49d8
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,Move global state API out of global_state object. (#4857),67035191443e8d645024806b2df72e96e6b05e64
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[xray] Put GCS data into the redis data shard (#2298),762bdf646eeceb3db60539c1a7d33bae5c2b58d6
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[tune] `tune.track` -> `tune.report` (#8388),67c01455fe313a65cc65640e52892ed91e08ea8b
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[rllib] Support torch device and distributions. (#4553),bb207a205bde6cdd7e378ed6643d8cc1e8479659
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[rllib] Refactor pytorch custom model support (#3634),47d36d7bd6f011f144984f08e410e8367d607bbf
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[RLlib] Cleanup/unify all test cases. (#7533),20ef4a860325d1735df038d4e4b8c7de5e013ed3
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[RLlib] PyTorch version of ES (Evolution Strategies). (#8104)PyTorch version of Evolution Strategies (ES) Algo.,3812bfedda7c10bd8e5ead343e02577bfe159728
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[RLlib] PyTorch version of ARS (Augmented Random Search). (#8106)This PR implements a PyTorch version of RLlib's ARS algorithm using RLlib's functional algo builder API. It also adds a regression test for ARS (torch) on CartPole.,d15609ba2ad55e4a1b43deee7799ee1a6ddc9279
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,Expose custom serializers through the API. (#1147)* Expose custom serializers through the API.* minor renaming* Add test.* Remove comment.* Clean up assertions.,6852e8839e76af46c67ace6a64ee0a131342d7b7
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[projects] Wrap ProjectDefinition in a class (#5654),cb7102f31ec8957d0a0cd67db013f7897edbdc70
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,renaming Call -> Task (#70),23d202bb734a790d1af6cd6c40a7d077c9c777ae
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,Rename _submit -> _remote. (#3321),d10cb570ab735a5f67f027e784792b6094d514fc
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[rllib] Rename PolicyEvaluator => RolloutWorker (#4820),7501ee51db88e6aa642b068b329b813c0712f3d9
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[serve] Remove serve.link(). rename serve.split() -> serve.set_traffic() (#8072),505f3a87142b73466044f1aa1e587e26f2a9bacc
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,Heartbeat table uses gcs pub-sub instead of redis accessor (#8655),016337d4eb910e9faefc781bb7ed3935baf9739a
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[autoscaler] Cleanup Logging (#2709)Moves Autoscaler onto Python `logging` module.,dbba7f2a53f45ea80321bca7c99492f44efd75f7
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[Serve] Refactor Metric System: Counter + Measure Support (#8114),c5a5a5de8975985c54ea49718f6473c42605379b
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,cleaning up tests,70e62313f08a816284aae31b799767c01296acb8
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[gRPC] Migrate gcs data structures to protobuf (#5024),0131353d42f20f28034480d45918130525fb0377
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,"Integrate ""tempfile_service"" into ""ray.node.Node"" (#3953)",21472b890aa1fc03e67b853bf57c89ca1f80ec90
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,[rllib] TensorFlow 2 compatibility (#4802),3807fb505b121e1e9f583f5859941cf07b1d7438
+https://github.com/ray-project/ray.git,/data/stairs/batch6DL/ray,cleanup tests a bit* clean up testing,66032f9a506deded596fdd4a29fdedf45c7ee1d2
+https://github.com/shenweichen/DeepCTR.git,/data/stairs/batch1DL/DeepCTR,refactor&update docsUse a more space efficient implementation in CrossNetAdd custom_objects in utils which will be used in load_model functionAdd FAQ in docs,3da641f3841d0cbb55543e691d4a2be1ca4102b7
+https://github.com/shenweichen/DeepCTR.git,/data/stairs/batch1DL/DeepCTR,update for tensorflow2.0,a0a2616ab74d9e4a104c4b4e13f910c9161059bc
+https://github.com/shenweichen/DeepCTR.git,/data/stairs/batch1DL/DeepCTR,Refactor & Add sequence input support* Refactor Input&Embedding* Support sequence(multi-value) input for AFM.AutoInt.DCN.DeepFM.FNN.NFM.PNN.xDeepFM models,d524c86cff045f675927c7da45296fbecface3d1
+https://github.com/shenweichen/DeepCTR.git,/data/stairs/batch1DL/DeepCTR,refactor inputs module,be65ce986a45bf2f35b5494db3fa6e993b905aeb
+https://github.com/shenweichen/DeepCTR.git,/data/stairs/batch1DL/DeepCTR,refactor feature columns refactor feature columns - different features can use different `embedding_dim`- group-wise interaction is available by setting `group_name`,db229dc31f0d4c79c0de2ece0bb919b35258d6b2
+https://github.com/streamlit/streamlit.git,/data/stairs/batch6DL/streamlit,Rename wrapper annotation in DeltaGenerator. for clarity. (#346)* Rename wrapper annotation in DeltaGenerator. for clarity.* Update docstring.,62972ea2836173f9660830c2a733de0739db3ce2
+https://github.com/streamlit/streamlit.git,/data/stairs/batch6DL/streamlit,Rename wrapper annotation in DeltaGenerator. for clarity. (#346)* Rename wrapper annotation in DeltaGenerator. for clarity.* Update docstring.,9b503988b7b44ac74f6900eb47b4e061dc0b8797
+https://github.com/streamlit/streamlit.git,/data/stairs/batch6DL/streamlit,ProxyConnection -> ClientConnection (#552)* ProxyConnection -> ClientConnection* ClientConnection.has_client_connection -> is_connected,f0a198c41c7899f9fadd55336469bd286af8470f
+https://github.com/streamlit/streamlit.git,/data/stairs/batch6DL/streamlit,ProxyConnection -> ClientConnection (#552)* ProxyConnection -> ClientConnection* ClientConnection.has_client_connection -> is_connected,0e48276cd26887168025cedb451290ac10ded712
+https://github.com/streamlit/streamlit.git,/data/stairs/batch6DL/streamlit,"Proxy refactoring. ""ReportSession"" object #538This does some Proxy cleanup and refactoring to set the stage for the run-on-save UI improvements that are coming down the line:- ForwardMsg schema change + `NewConnection` -> `Initialize` + `NewReportMessage` -> `NewReport` + Added `SessionState`. for session state changed events- `ForwardMsg`s get composed in `forward_msg_proto.py`- A few things in Proxy got moved around: + `Proxy._connections` -> `Proxy._proxy_connections` + `Proxy.register_browser()`. `Proxy.deregister_browser()` -> `Proxy.register_browser_with_report_queue()`- Proxy no longer has `_get_file_path()`. Instead. `ProxyConnection.source_file_path` is initialized with the proper path to watch for report changes.- Proxy browser registration is now consolidated into `on_browser_connection_opened`. which implements the following sequence of events: + Send the `Initialize` ForwardMsg to the browser + Register the browser with report_queue (sends the `NewReport` ForwardMsg) + Register with `ReportSession`. creating it if it doesn't exist + Register BrowserWebSocket to ReportSession's signal listeners- Inverse happens in `on_browser_connection_closed`There's only a small bit of new functionality in this PR: ""run-on-save"" state changes are now synchronized between all connected browsers. (So if two browsers are viewing the same report. and one of them toggles the run-on-save setting for that report. the other browser will be notified of this change.)",30eed2f5af46df3a5377650fbbec4127b49e0980
+https://github.com/streamlit/streamlit.git,/data/stairs/batch6DL/streamlit,"Proxy refactoring. ""ReportSession"" object #538This does some Proxy cleanup and refactoring to set the stage for the run-on-save UI improvements that are coming down the line:- ForwardMsg schema change + `NewConnection` -> `Initialize` + `NewReportMessage` -> `NewReport` + Added `SessionState`. for session state changed events- `ForwardMsg`s get composed in `forward_msg_proto.py`- A few things in Proxy got moved around: + `Proxy._connections` -> `Proxy._proxy_connections` + `Proxy.register_browser()`. `Proxy.deregister_browser()` -> `Proxy.register_browser_with_report_queue()`- Proxy no longer has `_get_file_path()`. Instead. `ProxyConnection.source_file_path` is initialized with the proper path to watch for report changes.- Proxy browser registration is now consolidated into `on_browser_connection_opened`. which implements the following sequence of events: + Send the `Initialize` ForwardMsg to the browser + Register the browser with report_queue (sends the `NewReport` ForwardMsg) + Register with `ReportSession`. creating it if it doesn't exist + Register BrowserWebSocket to ReportSession's signal listeners- Inverse happens in `on_browser_connection_closed`There's only a small bit of new functionality in this PR: ""run-on-save"" state changes are now synchronized between all connected browsers. (So if two browsers are viewing the same report. and one of them toggles the run-on-save setting for that report. the other browser will be notified of this change.)",d931a842627cf332fb0d38851ba7d2c45545c1a2
+https://github.com/streamlit/streamlit.git,/data/stairs/batch6DL/streamlit,Refactor and clean up hashing code (#1187)* Refactor and clean up hashing code* Extract Python 3 code that gets referenced code* Address comments,1ba72bc1d503c03e26739e4c21fe2803d5b48502
+https://github.com/tensorflow/adanet.git,/data/stairs/batch2DL/adanet,"Rename ""base learner"" to ""subnetwork"".After a long discussion and democratic process. the team decided to rename ""base learner"" to ""subnetwork"". It better matches the naming from Cortes et al. 2017. and is more clear for users who are less familiar with ensemble terminology.Also move classes formerly prefixed with `BaseLearner` to `subnetwork` subpackage.PiperOrigin-RevId: 215924195",0953ca2e5690eb258a8787435e498fa6917238b6
+https://github.com/tensorflow/adanet.git,/data/stairs/batch2DL/adanet,Begin adding TF 2.0 support #93.Add support to `adanet.ensemble` package.Create `adanet.tf_compat` package for migration utilities.PiperOrigin-RevId: 244197093,fd1b723059181fbcb50646f42fd9262eb5325e1c
+https://github.com/tensorflow/adanet.git,/data/stairs/batch2DL/adanet,Replace inspect.getargspec calls to be PY2AND3 compatible.inspect.getargspec is officially deprecated in python 3.6.There is no compatible high-level API but the lower level is compatible.PiperOrigin-RevId: 276489909,5bc33ec29cd6434fbbc2a9462a3665b1283125b5
+https://github.com/tensorflow/adanet.git,/data/stairs/batch2DL/adanet,Simplify `adanet.Ensemble` object.Move old `adanet.Ensemble` fields for training and evaluation to new internal `_EnsembleSpec` object to reduce public API surface.Update `adanet.Evaluator` to only evaluate AdaNet losses.Drop `complexity_regularized_loss` field.PiperOrigin-RevId: 216280570,6443a84f409bde0df00b517ad0ea150390ee7cfc
+https://github.com/tensorflow/adanet.git,/data/stairs/batch2DL/adanet,Switch estimator_distributed_test back to TF 1.0.After a recent change where keras optimizers successfully clears the name scope before creating new variables. the round robin strategy no longer works. since the chief and workers are no longer guaranteed to create Adam variables with the same name. This prevents us from using keras optimizers. which blocks us from adopting EstimatorV2. and blocks us from migrating to TF 2.0.Disabling the test for experimental multi-worker distribution strategy for now.PiperOrigin-RevId: 255099451,d613facf378697f79b315e128349f12d5ae569b3
+https://github.com/tensorflow/adanet.git,/data/stairs/batch2DL/adanet,Use `tf.compat.v1` module for `TPUEstimator`. since it's no longer in TF 2.0. #93PiperOrigin-RevId: 263678656,ceb75be38e2f832a1a0189a89bdbe7afe86324dc
+https://github.com/tensorflow/ranking.git,/data/stairs/batch1DL/ranking,Internal changePiperOrigin-RevId: 244210999,0c585de970a0316d5dda5612d74086271a065f2f
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Trax layers: rename Identity->Copy and make Branch take layers as input. Allow named tuples and add tests.PiperOrigin-RevId: 246683951,53d0582af625c232a36dee7417eede9846180b96
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,internalPiperOrigin-RevId: 287810815,1834e5614221163a63656a9f9f21a55f13d5bee4
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Rename Copy to NoOp and extend Select so the UnnestBranches can be removed.PiperOrigin-RevId: 249173585,777c6a8f477bcb36ffab5c9bdd42c54a2932501a
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Use efficient squared_difference instead of square(diff) (#1413)* Use efficient squared_difference instead of square(diff)* Use efficient squared_difference(x. y) instead of (x - y)**2,78ae06194bb150f0d756e300864e6beb98862cd6
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Moving inject_additional_input to common_video.PiperOrigin-RevId: 217234688,1f125fc462126a9fd80b2c10b5d9ab4f1e545597
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Changes to data generators and SubwordTextEncoder ... should not break anything.PiperOrigin-RevId: 161483309,912daf7a9dadece5a1e4969a9aaa14483098e18f
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,s/os.mkdir/tf.gfile.MakeDirs -- this seems to make Travis happy.PiperOrigin-RevId: 199727255,42f8b2677dc4ff1bd60accda4a0a0946cbae23af
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Bugfix bringing LM1B vocab to the new naming.PiperOrigin-RevId: 186702331,5704e55b0c06ed169fec35bf4a2e9971c32a4f40
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,refactor of wrappers and collect,25b72af9300093c6021c3371717dafed9208e08d
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Rename train_generator to just generator and port wiki_32k to Problem. Also cleaning and speeding up vocab generation. algorithmic problems. wmt_zhen and BPE download.PiperOrigin-RevId: 165015579,94eca0c50e8c32d30d262fc249c03e3019ac03f7
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Python3 compatibility fixes,848d074013c9c3031cb309282bfcad1b4858db89
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,CHECKPOINT BREAKING: make T2TModel a subclass of Layer so it can be called; all variables are now in model-name scope.PiperOrigin-RevId: 176407831,01b8c31da30a7e1109451df2b4b4698946c6c35c
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Move EnvProblem.done_indices to env_problem_utils. it seemed like a moreappropriate place.PiperOrigin-RevId: 235597040,c46548e3b1e9c3aef8f6010b1df6bf0356a38619
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Improve VideoModality for bitwise inputs and make a small refactor. accept bitwise inputs in RL policy.PiperOrigin-RevId: 196915359,deed3c87db6171ea747868259c62b604c179976b
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Separating agent's eval and trajectory collection,4bb6ecb9545c34f881dc8e822e92ec4fcfd689bf
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,TRAX layer refactor. make our layers classes.PiperOrigin-RevId: 244631294,e6d2a3e4f2cd6e51dffa229d9c3fdcabf31bdfea
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Move trax learning rate schedule into a separate library and add a schedule adjustable by eval performance.PiperOrigin-RevId: 236276518,c317d6214f2995f5d14c332095ff8324624b96a9
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Standardize attention between TransformerLM and TransformerRevnetLMPiperOrigin-RevId: 266059301,b7ff8c4c227d45dfd6f0ae73c60349d532061bc0
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Move memory-efficient attention to attention.pyPiperOrigin-RevId: 265819997,8edb68ca31a02fe96a591e2ca4bd38a0e447277b
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Refactor RL codePiperOrigin-RevId: 208837067,3d418439076c1732b0703b7dbc1b6269aef7c469
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Rename common_layers.is_on_tpu to is_xla_compiledPiperOrigin-RevId: 208221937,9221fe8561ac8059144bbb82eab68976423ce4d4
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Use int32 in transformer_vae.PiperOrigin-RevId: 183449294,32b1bac99b9991a3abbb0ffdfa8ee3e18db5826d
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Code cleaup in autoencoder. works both on image and text.PiperOrigin-RevId: 208598788,83e9df7013d56bd0e13cff39ad6a8b4ee10ddd8e
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Change names of key attributes of base Layer class.PiperOrigin-RevId: 271685286,e2254bc24f4ab49201bddf3270b11bdab6c9e57e
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Rename FanIn --> Branch and make TransformerEncoder work.PiperOrigin-RevId: 244986961,b93fc036fdbacfddcadad8fb781f5b670533384e
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Change layer names according to s/MultiHeadedAttention/Attention/.Also. for Attention layers. make n_heads have default value 1.PiperOrigin-RevId: 254820673,d9f8074fc391594656176dfbc77bfd3faa81892d
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,s/log_registry/maybe_log_registry_and_exit to make its intent clearerPiperOrigin-RevId: 198784505,058b5fc0be35c260d70acf11b5b86d7e6b29daa5
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,s/runScheduledSampleFunc/_run_scheduled_sample_func to keep linter happy.PiperOrigin-RevId: 212057756,06862886125f5b5d262e2b0e6ffeba059dc0d57d
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,"Mesh-Tensorflow - Changed a bunch of names and interfaces. Rename TensorShape to Shape. Mesh shapes now have named dimensions. and are instances of class Shape. Rename ""infeed"". ""outfeed"" to ""import_tf_tensor"". ""export_to_tf_tensor"". Delete unused models. Add missing dropout in mtf_transformer. and update some configs.PiperOrigin-RevId: 207836648",ebbcd3b3ded83d6f1457f2f6808a23ec9b3552f1
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Rename ambiguous function names.PiperOrigin-RevId: 169135518,3aa13683e30b15633b0c358f9d888f702cff0c3f
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,File/code movesPiperOrigin-RevId: 164058229,f6799b9515e0e214d2d4295f4e4cf94cf27cf333
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Move `tf.python_io.tf_record_iterator` references to `tf.compat.v1.tf_record_iterator`.PiperOrigin-RevId: 222443392,a1ab69902674b4d049e4e9090b01cbeec0d28a8a
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Replace Modality class methods with functions.In detail. this CL does the following:+ Rewrites following Modality methods as functions: bottom. loss. name. targets_weights_fn. top. top_is_pointwise.+ Implements get identifiers so T2TModel applies default transformations. They can be overriden by hparams.{bottom.loss.name.etc.}.This change touches many files:+ Major changes in modality.py. modalities.py. and t2t_model.py.+ All model files calling modality methods. They're changed to use the get identifier.+ All custom modality files. They're changed from class methods to functions.Sorry for the big CL. This was the smallest incremental change I found. CLs for non-T2T directories will be submitted after this one.PiperOrigin-RevId: 234913884,ac74489b6aa1e9c5a9abd12d919ab66d9a99c1e8
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,gym_problems refactor done,afee9ad22fd46eed0f4c567738729b93d97f769d
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Extract a base class from EnvProblemPiperOrigin-RevId: 257907213,abbd929558dd29115acc9d0f035f1efddb45566d
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Migrate away from contrib.HParams to the newly forked over one.PiperOrigin-RevId: 231998023,512c9a2d48b3d3cb59806bce1a2395b419b384d8
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Clean up and correct docs for DMOL loss and sampling.PiperOrigin-RevId: 200788010,abd502722246fc38b009d8085bd9601ef09608b2
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Replace numerically more stable log1p and expm1 (#1424)This PR replaces `log(1 + x)` with `log1p(x)` and `exp(x) - 1` with `expm1(x)`. These functions are more precise if x is close to zero.,c81f56c15a05a52dabb53f12cab93a1deb26c395
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Registry refactor (#1410)* registry refactor and deprecated call-site updates* added on_problem_set callback. simplified name* changed optimizer registration names to snake_case. documentation* removed create_registry,ac4cb05e7a1ee3424a1b17f41211f3662f96abd4
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Refactoring: state save/restore. evaluation. logging. inputsPiperOrigin-RevId: 235729093,150b2615b0ca6e2baf7dabb22dc7b0d67281ebd2
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Swap model-based RL trainer for the new version (it works).PiperOrigin-RevId: 217456149,d34ea12eb046e8efcbf226089606be12f7c6e19b
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Factor out small rng function from combinator call methods.PiperOrigin-RevId: 252863011,404335e94b3f70c1c07792d13b032925b96c59aa
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Internal changePiperOrigin-RevId: 215340476,c4b34e1869dede0798818b5b9f33a960a2965fee
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Reduce usage of tf.contrib (#1345)* tf.contrib.rnn -> tf.nn.rnn_cell* tf.contrib.framework -> tf.traintf.contrib.framework.load_checkpoint -> tf.train.load_checkpointtf.contrib.framework.list_variables -> tf.train.list_variablestf.contrib.framework.init_from_checkpoint -> tf.train.init_from_checkpoint* tf.contrib.learn.ModeKeys -> tf.estimator.ModeKeystf.contrib.learn.ModeKeys.TRAIN -> tf.estimator.ModeKeys.TRAINtf.contrib.learn.ModeKeys.EVAL -> tf.estimator.ModeKeys.EVALtf.contrib.learn.ModeKeys.INFER -> tf.estimator.ModeKeys.PREDICT* tf.contrib.eager.in_eager_mode -> tf.executing_eagerly* tf.contrib.data.batch_and_drop_remainder -> .batch(.... drop_remainder=True)* tf.contrib.data -> tf.data.experimental* tf.contrib.util.make_tensor_proto -> tf.make_tensor_proto* Simplify tf.contrib.eager imports* tf.initialize_all_variables -> tf.global_variables_initializer,4c7e7ef7582bee09341308e0d94a05a08c307f6f
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,using tf.layers.flatten and removing prodPiperOrigin-RevId: 217231586,49c7e2013c04ff197090d07fe34382b53b5e67e4
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Replace deprecated np.random.random_integers with np.random.randint (#1346),05c972af8e0f8d656cf0fed910839e00a050b2f5
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Clean up shape info in local_attention_1d.PiperOrigin-RevId: 209668171,ca776803384cc0a4e27d990f4071f93e5d342b58
+https://github.com/tensorflow/tensor2tensor.git,/data/stairs/batch6DL/tensor2tensor,Clean up shape info in {masked_.}local_attention_2d.PiperOrigin-RevId: 210042530,f37a12e78bb51bb25b7e4d72c7075a33522aeada
+https://github.com/tensorlayer/tensorlayer.git,/data/stairs/batch5DL/tensorlayer,word2vec example refactored and tested,3d8a5039c00a27c5cab2a77c5eb60055add1acc6
+https://github.com/tensorlayer/tensorlayer.git,/data/stairs/batch5DL/tensorlayer,replace all initializers with ours in normalization.py,578ebb9f34f3d152e5ec8f86f8a4be7ef9081504
+https://github.com/tensorlayer/tensorlayer.git,/data/stairs/batch5DL/tensorlayer,refactor _release_memory. ModelLayer. vgg,4953dac1e85a97bdc2b55e9ee6af882f96b45711
+https://github.com/tensorlayer/tensorlayer.git,/data/stairs/batch5DL/tensorlayer,embedding refactored. documentation updated,b941906ece693f54f3d6f195e0a86b682b14e1f1
+https://github.com/tensorlayer/tensorlayer.git,/data/stairs/batch5DL/tensorlayer,tf_upgrade_v2,761cb229ca85b87ade350c0b07183eb34023cf90
+https://github.com/tensorlayer/tensorlayer.git,/data/stairs/batch5DL/tensorlayer,examples support TF1.3,6430b24aeb8306ca9884f0f8241131514aa880c0
+https://github.com/tensorlayer/tensorlayer.git,/data/stairs/batch5DL/tensorlayer,refactor extend layers,c52b511770c639f639fcdb550bc449ae0e5bc309
+https://github.com/tensorlayer/tensorlayer.git,/data/stairs/batch5DL/tensorlayer,simple API for VGG16 VGG 19,f350b6891b68f74e362b8d57b66b6df733d111aa
+https://github.com/tensorlayer/tensorlayer.git,/data/stairs/batch5DL/tensorlayer,[maintain] for TF 0.12.1. check examples,f53ec4a37341e167fcc8b2647d4858308914e2b0
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,use InputDesc instead of InputVar.,5b29bda9f17d7b587259e13963c4c8093e8387f8
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,update summary API to latest,9fc5d856d2e7b38b80b1b32019193b1f4cbc39f2
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,Backport TensorSpec; tf=tf.compat.v1 in many files.,505e28eb88d74b6a554a5db1586999f188c20f1e
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,InputDesc -> tf.TensorSpec everywhere,b8a50d72a7c655b6dc6facb17efd74069ba7f86c
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,prefer npz over npy,ded6e8341d19d06671591144dfe052d063b1cdf5
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,Class names for cifar/fashion mnist (#863),f227f45ffcb9d643b4974f753a9126c1b1254c05
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,Deprecated LeakyReLU to use tf.nn.leaky_relu,7da83a51e660c69108648447b4d88a22feb3db49
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,[MaskRCNN] use attrdict for config,9b1d10952d9aa43ae795d453aed14f9dde0f13f3
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,Generalize imagenet_utils,fec86fece946c3296784ef9a026849dcdac6fb79
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,widely use add_moving_summary,94fc5acbad0fe9820843bb08639765654783d914
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,better infra for evaluate,ddf737d72169d4e05a626656e5248b175f704d5e
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,clean-up '-summary' in stats name. clean-up some use of get_scalar_var,0f90d4c2bc89377f4e9be5ee06e704164ab311f6
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,prefer get_variable over get_scalar_var,f47923c741168df626a21bf8e320d6f2d229d2f7
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,remove Trainer._process_summary and use a general Trainer.add_summary,2bec1d623381e9a9c1e9ca45dd39d59d31027957
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,1.0.0rc0 change concat_v2 to concat (#121),9b85e7a1994005f76ed930669f6259cb799d5791
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,public register_callback,88b99f38ff53a83adad9cfcc17bfe9014131c9f6
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,doc for prefetch. brightnessadd -> brightness,27ea2836671fb670dfbfee6fb6b53e9c00aeebd8
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,deprecated tensorpack.RL and use gym for RL examples,7e963996f615b85f7459455596b4ee9bbd0bce8e
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,Use a better timer when available.,d2c5cc162aaf15b4f9077fb8370ed4b98ee8b848
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,Inferencer API renamed,b747c0683d2462d9c047f658df2c73078bb3e287
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,[FasterRCNN] Some refactor to prepare FPN data.,aa96b7ca5191da1e0fd732f196061848bfdc2c6c
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,make augmentors type-safe,49b61fc09bcc1b91ce4db0199caa9284fb38df18
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,always use reset_state,2f3b85024b8252c0238720d8f1aa947319583318
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,docs and GAN trainer upgrade,fde338eabf832c2d25b1b1b4f9b6302ad6287a0c
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,[breaking] deprecate callbacks=Callbacks() but use a list.,243e957fe6d62a0cfb5728bd77fb3e005d6603e4
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,[WIP] Switch GANs to use Trainerv2,2d99afeaac245924fd38b471d101f6ba9ae6ef6e
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,placeholder->TensorSpec refactor,ba679ab1fba2f4e2e73f74e1e792b85a4ac86486
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,[MaskRCNN] BoxProposals struct to manage proposals; rename probs->scores,6041a1a4e76589ea0d1fda142a546fbdb6358245
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,use _setup and small other refactors,c279dbfe840d3a9a28c51b81989b3a0f4cfe4e90
+https://github.com/tflearn/tflearn.git,/data/stairs/batch3DL/tflearn,Basic refactoring,5e61299acaa5799c25b6aee2b4915610c72173e4
+https://github.com/tflearn/tflearn.git,/data/stairs/batch3DL/tflearn,TensorFlow 0.12 support,a76c41d2432058c33f3bd34d962ffb232cfce99a
+https://github.com/tryolabs/luminoth.git,/data/stairs/batch3DL/luminoth,Refactor path management for Luminoth's home,208f1963dd50fa494611c33c2fcbaf6cf3f6dbd0
+https://github.com/tryolabs/luminoth.git,/data/stairs/batch3DL/luminoth,Renames bbox_transforms functions for consistency. adds joined TF/np tests.,041fd9f724d329796511e7b224614d36758e5a40
+https://github.com/tryolabs/luminoth.git,/data/stairs/batch3DL/luminoth,Minor code/comment styling changes,2c8035d5facd7e5bc8e8660a3f56e0d24c16bfdd
+https://github.com/tryolabs/luminoth.git,/data/stairs/batch3DL/luminoth,Small changes to style in RCNN and RPN target tests,bcf2744ab99ac16d5efb09da01fdd89159c5d632
+https://github.com/tryolabs/luminoth.git,/data/stairs/batch3DL/luminoth,Replaces VOC's file management with tf.gfile for compatibility and GCP support,7a7cb4e1e72421c47597173dc6704e759834e451
+https://github.com/tsurumeso/waifu2x-chainer.git,/data/stairs/batch1DL/waifu2x-chainer,Simplify code,462519377474066988da39ce1654a41d7ff88e05
+https://github.com/tsurumeso/waifu2x-chainer.git,/data/stairs/batch1DL/waifu2x-chainer,Change six.print_ to print,d98c45efec64c4d0769b2cf20d97995cd7e10e2c
+https://github.com/tsurumeso/waifu2x-chainer.git,/data/stairs/batch1DL/waifu2x-chainer,Python3 compat,e7bc2b6ed0ec84ea587c67768df37125b3ea5c7d
+https://github.com/uber/ludwig.git,/data/stairs/batch3DL/ludwig,Refactors the code that uses set_default_value for features,37acb137b1bc42319cf759b73270517c2147698a
+https://github.com/uber/ludwig.git,/data/stairs/batch3DL/ludwig,Updated GPUOption and COnfigProto import to tf.compat.v1,10f3e95fa68b171698ad7768534ae5f0e71970cc
+https://github.com/uber/ludwig.git,/data/stairs/batch3DL/ludwig,Renamed loss and measures summaries names,cdab60e331b42dfbb77c143595d337e3e0e279a8
+https://github.com/uber/ludwig.git,/data/stairs/batch3DL/ludwig,Changing to_float and to_int into cast because of deprecation in tensorflow 1.13,b00434ec2418843dce89aadf7cf7cf4416d131bf
+https://github.com/uber/ludwig.git,/data/stairs/batch3DL/ludwig,Refactor tests (#316)* Heavily refactors the integration tests. Adds some tests that save processed data. usetrain/test/val,d6c1b86594ef9a97e9f503547ab6567f89508486
+https://github.com/Unity-Technologies/ml-agents.git,/data/stairs/batch5DL/ml-agents,On Demand Decision (#308) * On Demand Decision : Use RequestDecision and RequestAction * New Agent Inspector : Use it to set On Demand Decision * New BrainParameters interface * LSTM memory size is now set in python * New C# API * Semantic Changes * Replaced RunMDP * New Bouncer Environment to test On Demand Dscision,c78d78edabbfb12824c8d831dd79040cd3b51d42
+https://github.com/Unity-Technologies/ml-agents.git,/data/stairs/batch5DL/ml-agents,Minor Optimizations (#836),4083df841237d879fc1c48d1bf2793e9a588351e
+https://github.com/Unity-Technologies/ml-agents.git,/data/stairs/batch5DL/ml-agents,Replace BrainInfos with BatchedStepResult (#3207),9e7eea5c6915841f339b23b4784e24244a0a1962
+https://github.com/Unity-Technologies/ml-agents.git,/data/stairs/batch5DL/ml-agents,Bubbled up indexing of AllBrainInfo to trainer controller from trainers,51287a42c498d46366903a13579d941b6adc37ef
+https://github.com/Unity-Technologies/ml-agents.git,/data/stairs/batch5DL/ml-agents,Allow usage with tensorflow 2.0.0 (via tf.compat.v1) (#2665),182a40e6f7ced48fabaab095f24b82e231ba2a9c
+https://github.com/Unity-Technologies/ml-agents.git,/data/stairs/batch5DL/ml-agents,[refactor] Structure configuration files into classes (#3936),721b8695bd5485a535c3d7a8eabfc2dc2b90168b
+https://github.com/Unity-Technologies/ml-agents.git,/data/stairs/batch5DL/ml-agents,"Remove ""external_brains"" arg for TrainerController (#2213)TrainerController depended on an external_brains dictionary withbrain params in its constructor but only used it in a single functioncall. The same function call (start_learning) takes the environmentas an argument. which is the source of the external_brains.This change removes the dependency of TrainerController on externalbrains and removes the two class members related to external_brainsand retrieves the brains directly from the environment.",3fbc9284f0ad05fa67eda56ac63ff5b9137b77c1
+https://github.com/Unity-Technologies/ml-agents.git,/data/stairs/batch5DL/ml-agents,SideChannel helper messages,8c612997b1d49afd2d4736ac701aff207ec471b1
+https://github.com/Unity-Technologies/ml-agents.git,/data/stairs/batch5DL/ml-agents,Refactor Trainers to use Policy (#1098),af691739edb23ebb7bd5e902ce50b1472631612c
+https://github.com/Unity-Technologies/ml-agents.git,/data/stairs/batch5DL/ml-agents,Gym no longer uses brain infos (#3060),7562a25f94caf81ba7606e97774aa9e5c25db5a7
+https://github.com/williamFalcon/pytorch-lightning.git,/data/stairs/batch5DL/pytorch-lightning,cleaning up demos (#313)* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos* cleaning up demos,07c5d22ae3dbfe7e78057db15db106c6fb4ed4ba
+https://github.com/williamFalcon/pytorch-lightning.git,/data/stairs/batch5DL/pytorch-lightning,calling self.forward() -> self() (#1211)* self.forward() -> self()* update changelogCo-authored-by: Jirka Borovec <Borda@users.noreply.github.com>,d394b80ac8cc5ba65d8026ad0e07fb32d69610f0
+https://github.com/williamFalcon/pytorch-lightning.git,/data/stairs/batch5DL/pytorch-lightning,Refactor (#407)* moved dp. ddp outside of trainer* added main mixins* finished major mixin refactor* flake8* finished major mixin refactor* finished major mixin refactor* finished major mixin refactor* finished major mixin refactor* finished major mixin refactor* finished major mixin refactor* finished major mixin refactor,14241577314c5c9adffdf14b107100e6656f5332
+https://github.com/williamFalcon/pytorch-lightning.git,/data/stairs/batch5DL/pytorch-lightning,refactored model tests,c7ad04be571ee0db88f0bc49a9fc40ebcd5491c3
+https://github.com/wkentaro/labelme.git,/data/stairs/batch4DL/labelme,Refactor app.py to use utils module,6e352f040c0090016ce126d21b6a0f0013816a8c
+https://github.com/wkentaro/labelme.git,/data/stairs/batch4DL/labelme,Support PyQt4 and PyQt5,dc2dce6f8bc45cc0ccb28f97f553f3efe4293325
+https://github.com/wkentaro/labelme.git,/data/stairs/batch4DL/labelme,Replace labelme.utils.draw with imgviz,8edd2182007007e50b9073d51c4e72a7d088866e
+https://github.com/wkentaro/labelme.git,/data/stairs/batch4DL/labelme,Replace labelme.cli.draw_label_png with imgviz,68fb3ebc4bc70608e3839e623babfa135edcbda9
+https://github.com/aleju/imgaug.git,/data/stairs/batch5DL/imgaug,Improve performance of dtype checks (#663)This patch improves the performance of dtype checksthroughout the library. The new method verifies inputarrays around 10x to 100x faster than the previous one.Add functions:* `imgaug.dtypes.gate_dtypes_strs()`* `imgaug.dtypes.allow_only_uint8()`Add decorators:* `imgaug.testutils.ensure_deprecation_warning`Deprecate functions:* `imgaug.dtypes.gate_dtypes()`,b5c563a90f07c86b6939aad71e9506020f8b4eb6
+https://github.com/allenai/allennlp.git,/data/stairs/batch5DL/allennlp,Switch word processing stuff to use Registrable. change default word splitter to spacy (#182)* Switch word processing stuff to use Registrable. change default word splitter to spacy* Just load the spacy tokenizer. and make it a class variable* Make mypy happy,e69089d05fca0ac850b0150ca5e6dc7322cb13c4
+https://github.com/asyml/texar.git,/data/stairs/batch4DL/texar,modified connectorsFormer-commit-id: 2ee4a9d7e64d342ee3de97de82109da9fce88847,e02f1a379696f66da7c2aff83e1f4af52f894614
+https://github.com/asyml/texar.git,/data/stairs/batch4DL/texar,tsf pointer decoderFormer-commit-id: a50c22d8eb4181ecdd69fe4f476ab15157481c31,d6dcffa15112f03d1bb08764740a78728e47e7d7
+https://github.com/chainer/chainercv.git,/data/stairs/batch6DL/chainercv,make random_sized_crop to not loop,1b69bb80e370abb6a7460d540e31408ff18847c4
+https://github.com/chainer/chainercv.git,/data/stairs/batch6DL/chainercv,split by label at once,aade0eaa2592fea564747c9eac3d6badd2d5615d
+https://github.com/chainer/chainercv.git,/data/stairs/batch6DL/chainercv,change convert_vgg to use caffemodel,e45bc5a945bf68250c18cde71253fac3f7774afd
+https://github.com/ClimbsRocks/auto_ml.git,/data/stairs/batch4DL/auto_ml,speeds up ensemble predictions for a single dictionary by bypassing multi-processing,343a835a26b6fbf1b7bd62965b74ed2d688319a5
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Convert DAGTensorGraph to DAGModel,f20016c8ebf43e786e263986d296f90b4b8551de
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,factors changes,58d3a2f433359af4bba6078abfbdfcec4bd29aa4
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Kinase changes,26d11c98dd695de255569f2a9fb2917e232aef0d
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Continue converting graph models to KerasModel,0c241128fc008e89745690bd58e91e754aa40514
+https://github.com/deepchem/deepchem.git,/data/stairs/batch6DL/deepchem,Removed keras dependency (first try),6420c12afd734f4965ffb0a66bb9af1356720739
+https://github.com/deepmind/sonnet.git,/data/stairs/batch3DL/sonnet,First steps of AlexNet cleanup.- Add option to disable batch normalization on fully-connected layers.- Remove HALF mode.- Add AlexNetMini and AlexNetFull.PiperOrigin-RevId: 164484078,4c62b40b3d3c99298e663dff6aed53974a386d3f
+https://github.com/google/deepvariant.git,/data/stairs/batch4DL/deepvariant,Replace genomics_io.make_vcf_reader with vcf.VcfReader.PiperOrigin-RevId: 187027082,27095706a4a71b748bea649461a6e47de654d95b
+https://github.com/keras-team/keras.git,/data/stairs/batch6DL/keras,Handle recent TF API changes.,5e73db6c00d62ac61cbae9056628a7683122b392
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,removed clean keywords,c07876205532861b4cf9a72af3b26a384432c0e8
+https://github.com/NifTK/NiftyNet.git,/data/stairs/batch6DL/NiftyNet,Transition to pandas dataframes for evaluation,22856afbd44b8179199f7629a54dea13043cdd5d
+https://github.com/OpenMined/PySyft.git,/data/stairs/batch6DL/PySyft,broken commit for reference. Also needs to have print statements removed,e1b93536da2eaf430b3955399034452baef98b91
+https://github.com/tensorflow/ranking.git,/data/stairs/batch1DL/ranking,Internal changePiperOrigin-RevId: 257591391,e5765a9614d095c74e5906e12e4777028fa59f6b
+https://github.com/tensorlayer/tensorlayer.git,/data/stairs/batch5DL/tensorlayer,update files APIs for windows,1410081071fb74b9b0022e7eb6e19588fec64add
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,dataset dir,4a59173c8b0e412595de53a549ca2759ef1b4898
+https://github.com/tensorpack/tensorpack.git,/data/stairs/batch5DL/tensorpack,remove some deprecations,ebf2332b18a480ab109ba368bc49ecd5499a5748
+https://github.com/tryolabs/luminoth.git,/data/stairs/batch3DL/luminoth,Use gfile's MakeDirs instead of os's makedirs for Python 2 support,1234ef1bdf036604c9d0e60440787de09e049cfb
+https://github.com/tryolabs/luminoth.git,/data/stairs/batch3DL/luminoth,Small changes in Web's test,04a7c8572a9e2812f155df02226e68c6df956755
+https://github.com/tsurumeso/waifu2x-chainer.git,/data/stairs/batch1DL/waifu2x-chainer,Use F.average in UpResNet10,43b6eb800492231c1ac30c68630a614ca5c6ffa6
+https://github.com/williamFalcon/pytorch-lightning.git,/data/stairs/batch5DL/pytorch-lightning,unify model test acc (#696),bde549cb36f9fecdb1e6192e73b3085a35e0ba52
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
